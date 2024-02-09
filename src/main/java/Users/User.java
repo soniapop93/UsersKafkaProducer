@@ -26,11 +26,11 @@ public class User {
     private String dateOfBirth;
     private Employment employment;
     @SerializedName("address")
-    private Address userAddress;
+    private Address address;
     @SerializedName("credit_card")
     private CreditCard creditCard;
     @SerializedName("subscription")
-    private Subscription userSubscription;
+    private Subscription subscription;
 
     public User(int id,
                 String uid,
@@ -45,9 +45,9 @@ public class User {
                 String socialInsuranceNumber,
                 String dateOfBirth,
                 Employment employment,
-                Address userAddress,
+                Address address,
                 CreditCard creditCard,
-                Subscription userSubscription) {
+                Subscription subscription) {
         this.id = id;
         this.uid = uid;
         this.password = password;
@@ -61,8 +61,8 @@ public class User {
         this.socialInsuranceNumber = socialInsuranceNumber;
         this.dateOfBirth = dateOfBirth;
         this.employment = employment;
-        this.userAddress = userAddress;
+        this.address = address;
         this.creditCard = creditCard;
-        this.userSubscription = userSubscription;
+        this.subscription = subscription;
     }
 }

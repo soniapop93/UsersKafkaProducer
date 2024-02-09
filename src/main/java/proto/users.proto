@@ -1,0 +1,55 @@
+syntax = "proto2";
+
+option java_package = "users.generated";
+
+option java_multiple_files = true;
+
+message User {
+  required int32 id = 1;
+  required string uid = 2;
+  required string password = 3;
+  required string first_name = 4;
+  required string last_name = 5;
+  required string username = 6;
+  required string email = 7;
+  required string avatar = 8;
+  required string gender = 9;
+  required string phone_number = 10;
+  required string social_insurance_number = 11;
+  required string date_of_birth = 12;
+  required Employment employment = 13;
+  required Address address = 14;
+  required CreditCard credit_card = 15;
+  required Subscription subscription = 16;
+}
+
+message Employment {
+  required string title = 1;
+  required string key_skill = 2;
+}
+
+message Address {
+  required string city = 1;
+  required string street_name = 2;
+  required string street_address = 3;
+  required string zip_code = 4;
+  required string state = 5;
+  required string country = 6;
+  required Coordinates coordinates = 7;
+}
+
+message Coordinates {
+  required string latitude = 1;
+  required string longitude = 2;
+}
+
+message CreditCard {
+  required string cc_number = 1;
+}
+
+message Subscription {
+  required string plan = 1;
+  required string status = 2;
+  required string payment_method = 3;
+  required string term = 4;
+}
