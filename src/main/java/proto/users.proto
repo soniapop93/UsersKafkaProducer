@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-option java_package = "users.generated";
+option java_package = "Users.generated";
 
 option java_multiple_files = true;
 
