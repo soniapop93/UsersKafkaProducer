@@ -6,7 +6,7 @@ import Users.generated.*;
 
 public class Logic {
     RequestsManager requestsManager = new RequestsManager();
-    public void producer() {
+    public void logicProducer() {
 
         // Get new user from API
         User newUser = requestsManager.getUser();
@@ -67,12 +67,16 @@ public class Logic {
                 .setSubscription(subscription)
                 .build();
 
-        // todo: finish to serialize data
+        // todo: finish it
 
         try {
             Thread.sleep(30000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    private void sendKafkaProducer() {
+
     }
 }
